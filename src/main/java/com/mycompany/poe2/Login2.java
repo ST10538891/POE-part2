@@ -47,13 +47,13 @@ public class Login2 {
     
     public String registeredUser() {
         if (!checkUserName()) {
-            return "Username is not correctly formatted; please ensure that your username contains at underscore and is no more than five characters in length";
+            return "Username is not properly formatted; please ensure that your username contains at underscore and is no more than five characters in length";
         } 
         if (!checkPasswordComplexity()){
-            return"Password is not correctly formatted; please ensure that your username contains at least eight characters, a capital letter, a number and a special chracter.";
+            return"Password is not properly formatted; please ensure that your username contains at least eight characters, a capital letter, a number and a special chracter.";
         }
         if (!checkCellPhoneNumber()) {
-            return "Cell number is incorrectly formatted or doess not contain an international code; please correct the number and try again.";
+            return "Cell number is incorrectly formatted or doess not contain an international code; please correct the number and retry.";
         }
          this.storedUsername = this.username;
          this.storedPassword = this.password;
