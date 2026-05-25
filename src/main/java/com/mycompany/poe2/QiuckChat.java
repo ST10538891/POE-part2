@@ -22,7 +22,7 @@ public class QiuckChat {
        System.out.println("Welcome to QuickChat");
        
        if(!login()) {
-           System.out.println("Loin Failed. Exiting.");
+           System.out.println("Login Failed. Now Exiting.");
            return;
        }
       System.out.print("How many messages would you like to enter?");
@@ -36,19 +36,19 @@ public class QiuckChat {
         System.out.println("\nTotal messages processed; " + messages.size());
         printALLMessages();
      
-       System.out.println("\nThank you for using QiuckChat!");
+       System.out.println("\nThank you for using QuickChat!");
    }
 
     private static boolean login() {
-       System.out.print("Enter usernme: ");
+       System.out.print("Enter usernme please: ");
        String user = scanner.nextLine();
-       System.out.print("Enter passord: ");
+       System.out.print("Enter passord please: ");
        String pass = scanner.nextLine();
        return !user.trim().isEmpty();
     }
 
     private static void createMessage() {
-       System.out.print("Enter recipient number: ");
+       System.out.print("Enter recipient number please: ");
        String recipient = scanner.nextLine();
        
        System.out.print("Enter message (max 250 chars: ");
