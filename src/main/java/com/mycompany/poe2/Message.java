@@ -58,10 +58,10 @@ public class Message {
     }
     public String sendMessageOption(int choice){
         return switch (choice) {
-            case 1 -> "Message successfully sent";
-            case 2 -> "Press 0 to delete the message";
-            case 3 -> "Message successfully stored";
-            default -> "Invalid option";
+            case 1 -> "Message is now successfully sent";
+            case 2 -> "Press 0 to erase  the message";
+            case 3 -> "Message is now successfully stored";
+            default -> "Optiom is Invalid";
         };
     }
     public String getMessageID() { return messageID; }
